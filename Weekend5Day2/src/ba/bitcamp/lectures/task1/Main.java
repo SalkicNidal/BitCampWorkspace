@@ -1,0 +1,21 @@
+package ba.bitcamp.lectures.task1;
+
+public class Main {
+
+	public static void main(String[] args) {
+        
+  
+		// Declaration new user John
+		User u = new User("John", "Doe");
+		System.out.println("User count " + u.getId());
+		// Declaration new user Toms
+		User u1 = new User("Toms", "Doe", 12);
+		System.out.println("User count " + u1.getId());
+		// Print name and user id to console
+		System.out.println(u.getName() + " "+ u.getId());
+		System.out.println(u1.getName()+ " " + u1.getId());
+		System.out.println(u.toString());
+		System.out.println(u1);
+	}
+
+}
