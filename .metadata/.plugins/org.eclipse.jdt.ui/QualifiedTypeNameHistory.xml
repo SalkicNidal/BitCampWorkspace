@@ -4,4 +4,8 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
 <fullyQualifiedTypeName name="ba.bitcamp.lectures.task2.hourlyEmployee"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Battery"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Antenna"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Display"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.MobileSpeaker"/>
 </qualifiedTypeNameHistroy>
