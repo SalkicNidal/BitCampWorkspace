@@ -1,0 +1,81 @@
+package ba.bitcamp.exercise.task3;
+
+public class Printers {
+	static int counter = 0;
+	private String name;
+	private int amountOfPaper;
+	private int amountOfInk;
+	private int printNumOfPaper;
+
+	public Printers() {
+		this.name = "Default";
+		this.amountOfPaper = 0;
+		this.amountOfInk = 0;
+		this.printNumOfPaper = counter;
+	}
+
+	public Printers(String name) {
+		this.name = name;
+		this.amountOfPaper = 0;
+		this.amountOfInk = 0;
+		this.printNumOfPaper = 0;
+	}
+
+	public boolean inkExist() {
+		if (this.amountOfInk == 0)
+			return false;
+		else
+			return true;
+	}
+
+	public boolean paperExist() {
+		if (this.amountOfPaper == 0)
+			return false;
+		else
+			return true;
+	}
+
+	public int numberOfPrintPapers() {
+		return counter++;
+	}
+
+	public void addPaper(int a) {
+		this.amountOfPaper += a;
+
+		if (this.amountOfPaper > 100) {
+			this.amountOfPaper = 100;
+		}
+	}
+
+	public void maxInk() {
+		this.amountOfInk = 100;
+	}
+
+	public void printPaper(int b) {
+		for (int i = 0; i < b; i++) {
+			this.amountOfPaper -= i;
+			this.amountOfInk -= i * 3;
+			counter++;
+			if (this.amountOfPaper == 0 || this.amountOfInk == 0) {
+				break;
+			}
+		}
+
+	}
+
+	public String toString() {
+		String line = " ";
+		line = "Printers name is " + name;
+		if (this.amountOfPaper > 0 && this.amountOfInk > 0) {
+			return line = line + " ready";
+		} else if (this.amountOfPaper > 0 && this.amountOfInk == 0) {
+			return line = line + " No Ink";
+		} else if (this.amountOfPaper == 0 && this.amountOfInk > 0) {
+			return line = line + " Not paper";
+		} else {
+			return line = line + "No paper and no ink";
+		}
+
+	}
+
+}

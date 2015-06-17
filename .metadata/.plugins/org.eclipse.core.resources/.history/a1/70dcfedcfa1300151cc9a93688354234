@@ -1,0 +1,18 @@
+package ba.bitcamp.lectures.task1;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		System.out.println("User count " + User.userCount);
+
+		User u = new User("John", "Doe");
+		System.out.println("User count " + User.userCount);
+		User u1 = new User("Thomas", "Doe", 12);
+		System.out.println("User count " + User.userCount);
+
+		System.out.println(u.getName() + " "+ u.getId());
+		System.out.println(u1.getName()+ " " + u1.getId());
+	}
+
+}

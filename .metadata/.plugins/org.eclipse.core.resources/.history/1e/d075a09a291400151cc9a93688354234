@@ -1,0 +1,14 @@
+package ba.bitcamp.exercise.task3;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Declaration new printer
+		Printers p1 = new Printers ("HP");
+		System.out.println("Ink exist is " +p1.inkExist());
+		System.out.println("Paper exist is " +p1.paperExist());
+		
+		
+	}
+
+}

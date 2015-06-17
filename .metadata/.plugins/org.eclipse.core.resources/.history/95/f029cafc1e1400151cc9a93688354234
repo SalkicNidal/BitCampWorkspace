@@ -1,0 +1,81 @@
+package ba.bitcamp.exercise.task2;
+
+public class Glass {
+
+	private String types;
+	private int amount;
+	private int max;
+
+	// Declaration of constructor with parameters max amount of water
+	public Glass(int max) {
+		super();
+		this.types = null;
+		this.amount = 0;
+		this.max = max;
+	}
+
+	/**
+	 * Method for get type of liquid
+	 * 
+	 * @return - String type
+	 */
+	public String getTypeOfLiquid() {
+		return types;
+
+	}
+
+	/**
+	 * Method for get maxAmount
+	 * 
+	 * @return - max amount
+	 */
+	public int getMaxAmount() {
+		return max;
+	}
+
+	/**
+	 * Get the currently amount
+	 * 
+	 * @return
+	 */
+	public int getCurrentlyAmount() {
+		return max -= amount;
+	}
+
+	/**
+	 * Method for add liquid type and liquid amount
+	 * 
+	 * @param a
+	 *            - Type of liquid
+	 * @param b
+	 *            - Amount of liquid
+	 */
+	public void addLiquid(String a, int b) {
+		if (!a.equals(this.types)) {
+			this.types.equals(types);
+			this.amount = this.amount;
+		} else {
+			this.types.equals(a);
+			this.amount += b;
+			if (this.amount > max) {
+				this.amount = max;
+			}
+		}
+	}
+
+	/**
+	 * Method which empty glass
+	 */
+	public void emptyGlass() {
+		this.types.equals(null);
+		this.amount = 0;
+	}
+
+	@Override
+	public String toString() {
+		return "Glass types is " + types + ", amount is " + amount + ", max is " + max
+				+ ".";
+	}
+	
+
+}

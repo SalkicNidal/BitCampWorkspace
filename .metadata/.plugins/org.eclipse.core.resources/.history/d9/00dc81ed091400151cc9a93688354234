@@ -1,0 +1,19 @@
+package ba.bitcamp.lectures.task2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Point a = new Point (-5,5);
+		Point b = new Point (9,-3);
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println("Distance between two point is: " +a.getDistance(b));
+		Point c = new Point(5,5);
+		System.out.println(c);
+		System.out.println("Distance between two point is: " +a.getDistance(c));
+		System.out.println("Distance between two point is: " +c.getDistance(b));
+
+	}
+
+}

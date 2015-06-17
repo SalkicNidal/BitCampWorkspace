@@ -1,0 +1,26 @@
+package ba.bitcamp.lectures.task1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		Card c1 = new Card (15 , 2);
+		Card c2 = new Card (15 , 2);
+		Card c3 = new Card (15 , 2);
+		Card c4 = new Card (15 , 2);
+		Card c5 = new Card (15 , 2);
+		Card c6 = new Card (15 , 2);
+		Card c7 = new Card (15 , 2);
+		Card c8 = new Card (15 , 2);
+		Card c9 = new Card (15 , 2);
+		Card c10 = new Card (15 , 2);
+		Card c11 = new Card (15 , 2);
+		Card c12 = new Card (15 , 2);
+		Card c13 = new Card (15 , 2);
+		
+		
+		System.out.println(c1.getCard());
+	}
+
+}

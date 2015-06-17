@@ -1,0 +1,17 @@
+package ba.bitcamp.exercise.task2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Glass g1 = new Glass(200);
+		System.out.println(g1);
+		
+		System.out.println(g1.getMaxAmount());
+		
+		g1.addLiquid("Cola", 50);
+		System.out.println(g1.getTypeOfLiquid());
+		System.out.println(g1.getCurrentlyAmount());
+	}
+
+}

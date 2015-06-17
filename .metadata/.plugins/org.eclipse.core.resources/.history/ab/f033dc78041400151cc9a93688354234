@@ -1,0 +1,29 @@
+package ba.bitcamp.lectures.task2;
+
+public class Point {
+	
+	private Integer x;
+	private Integer y;
+	
+	
+	
+	public Point(Integer x, Integer y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+	
+	public  double getDistance(Point other){
+		
+		return Math.sqrt((this.x - other.x)*(this.x - other.x) + (this.y - other.y)*(this.y - other.y));
+		
+	}
+
+	
+	public String toString() {
+		return "Point x= " + x + ", y=" + y + ";
+	}
+	
+	
+
+}

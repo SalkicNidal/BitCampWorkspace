@@ -1,0 +1,56 @@
+package ba.bitcamp.lectures.task1;
+
+public class Card {
+
+	private int value;
+	private int suit;
+
+	public Card(int value, int suit) {
+
+		this.value = value;
+		this.suit = suit;
+	}
+
+	public String getCard() {
+		String line = " ";
+
+		if (this.value <= 10) {
+			line += value;
+		} else {
+			switch (this.value) {
+
+			case 11:
+				line += "Jeck";
+				break;
+			case 12:
+				line += "Queen";
+				break;
+			case 13:
+				line += "King";
+				break;
+
+			}
+
+		}
+		switch (suit) {
+
+		case 0:
+			line += " Heart";
+			break;
+		case 1:
+			line += " Clubs";
+			break;
+		case 2:
+			line += " Spades";
+			break;
+		case 3:
+			line += " Diamond";
+			break;
+
+		}
+
+		return line;
+
+	}
+
+}
