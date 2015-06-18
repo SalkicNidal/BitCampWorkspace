@@ -1,0 +1,21 @@
+package ba.bitcamp.exercise.tasks;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		DesktopComputer dc1 = new DesktopComputer();
+		
+		dc1.setCapacityOfHardDisk(160);
+		System.out.println("Capacity of hard disk is: "+ dc1.getCapacityOfHardDisk());
+		dc1.setFreeSpaceForRam(1024);
+		System.out.println("Free space of RAM is: "+dc1.getFreeSpaceForRam());
+		dc1.setHasOpticalDrive(true);
+		System.out.println("Have optical drive " +dc1.getHasOpticalDrive());
+		dc1.setIsOverclock(false);
+		System.out.println("Have overlock "+ dc1.getIsOverclock());
+		
+
+	}
+
+}

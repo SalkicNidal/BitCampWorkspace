@@ -1,0 +1,13 @@
+package ba.bitcamp.exercise.task1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		MobileSpeaker sp1 = new MobileSpeaker("Samsung", 50, 17.2);
+		System.out.println(sp1);
+
+	}
+
+}

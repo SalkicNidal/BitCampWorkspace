@@ -1,0 +1,9 @@
+package ba.bitcamp.exercise.inheritance.task1;
+
+public class KPdom extends Jail{
+
+	public Integer numberOfpatients;
+	public Integer numberOfDoctors;
+
+	
+}

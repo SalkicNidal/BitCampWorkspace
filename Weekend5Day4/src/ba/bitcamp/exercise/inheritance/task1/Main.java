@@ -1,0 +1,48 @@
+package ba.bitcamp.exercise.inheritance.task1;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Building b = new Building();
+		b.area = 1000;
+		b.location ="NIK";
+		b.population=1000;
+		
+		University u = new University();
+		
+		u.name = "IUS";
+		u.numberOfStaff = 1000;
+		u.isItPublic = false;
+		u.numberOfFaculty = 25;
+		u.area = 500;
+		u.location = "KOL";
+		u.population = 200;
+		System.out.println(u.getPopulationDensty());
+		
+		Hospital h = new Hospital();
+		
+		h.area = 100;
+		h.hasCT = false;
+		h.isItPublic = true;
+		h.location = "KOMIN bb";
+		h.numberOfBeds = 20;
+		h.numberOfSurgeons = 15;
+		h.population = 80;
+		
+		Jail j = new Jail();
+		
+		j.area = 300;
+		j.hasGym = true;
+		j.location = "MIKO";
+		j.numberOfCells = 40;
+		j.numberOfFreeCells = 5;
+		j.population = 400;
+		j.securityLevel = "high";
+		
+		System.out.println(j.getNumberOfOcupiedCells());
+		
+		
+	}
+
+}

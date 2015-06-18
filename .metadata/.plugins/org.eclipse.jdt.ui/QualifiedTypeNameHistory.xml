@@ -8,4 +8,10 @@
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Antenna"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Display"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.MobileSpeaker"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.inheritance.task1.Building"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.StationaryComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.PortableComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.Workstation"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.PersonalComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.DesktopComputer"/>
 </qualifiedTypeNameHistroy>

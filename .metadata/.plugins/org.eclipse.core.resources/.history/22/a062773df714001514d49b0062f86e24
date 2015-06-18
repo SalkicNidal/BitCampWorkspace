@@ -1,0 +1,55 @@
+package ba.bitcamp.exercise.task1;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// Declaration new mobile speaker and print information to console
+		MobileSpeaker sp1 = new MobileSpeaker("Samsung", 50, 17.2);
+		System.out.println(sp1);
+
+		// Increase volume without turn on
+		sp1.increaseVolume();
+		System.out.println(sp1);
+
+		// Increase volume with turn on
+		sp1.enable();
+		sp1.increaseVolume();
+		System.out.println(sp1);
+
+		// Increase and lower volume few times
+		sp1.increaseVolume();
+		sp1.increaseVolume();
+		sp1.increaseVolume();
+		sp1.lowerVolume();
+
+		// Print current volume
+		System.out.println(" Volume of speaker is " + sp1.getVolume());
+
+		// Declaration new battery and print information to console
+		Battery b1 = new Battery("Samsung", 3);
+		System.out.println(b1);
+
+		// Charge battery with entered time and print status of percent of
+		// battery
+		b1.chargeBattery(6);
+		System.out.println("Current procent of battery is "
+				+ b1.getPercentOFBattery());
+
+		// Charge and decreases battery and print information of battery to
+		// console
+		b1.chargeBattery(20);
+		b1.decreasesBattery(20);
+		System.out.println(b1);
+		
+		Antenna a1 = new Antenna("Maximus", 2);
+		System.out.println(a1);
+		
+		a1.setSignal(2);
+		System.out.println(a1.typeOfSignal(4, "SMS3876345678955"));
+		
+		
+
+	}
+
+}
