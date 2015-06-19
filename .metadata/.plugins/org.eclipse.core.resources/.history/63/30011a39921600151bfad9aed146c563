@@ -1,0 +1,73 @@
+package ba.bitcamp.exercise.task1;
+
+public class Plants extends LifeForm {
+
+	public static final int LITTLE = 0;
+	public static final int MEDIUM = 1;
+	public static final int LOT = 2;
+
+	private Boolean isToxic;
+	private int quantity;
+
+	public Plants(Boolean isLive, Boolean isToxic, int quantity) {
+		super(isLive);
+		this.isToxic = isToxic;
+		this.quantity = quantity;
+	}
+
+	public Boolean getIsToxic() {
+		return isToxic;
+	}
+
+	public void setIsToxic(Boolean isToxic) {
+		this.isToxic = isToxic;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Plants other = (Plants) obj;
+		if (isToxic == null) {
+			if (other.isToxic != null)
+				return false;
+		} else if (!isToxic.equals(other.isToxic))
+			return false;
+		if (quantity != other.quantity)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		super.toString();
+		String l = "";
+		if (super.getIsLive().equals(true)) {
+			l+=super.toString();
+			l += "Plants is toxic " + isToxic;
+			if (quantity == LITTLE) {
+				l += "plant have litle food";
+			} else if (quantity == MEDIUM) {
+				l += " plant have medium food ";
+			} else {
+				l += " plant have lot food";
+			}
+		} else {
+			l += "Uvehla";
+		}
+		return l;
+	}
+
+}

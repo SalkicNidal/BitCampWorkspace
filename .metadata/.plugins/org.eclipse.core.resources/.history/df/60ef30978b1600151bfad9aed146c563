@@ -1,0 +1,71 @@
+package ba.bitcamp.exercise.task1;
+
+public class Zebra extends Animal {
+
+	public static final int HEALTHY = 0;
+	public static final int ILL = 1;
+	public static final int DEATHLY = 2;
+
+	private int age;
+	private int condition;
+
+	public Zebra(Boolean isLive, Integer weigth, int mainFood, int age,
+			int condition) {
+
+		super(isLive, weigth, mainFood);
+		this.age = age;
+		this.condition = condition;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getCondition() {
+		return condition;
+	}
+
+	public void setCondition(int condition) {
+		this.condition = condition;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Zebra other = (Zebra) obj;
+		if (age != other.age)
+			return false;
+		if (condition != other.condition)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		super.toString();
+		String l = "";
+		if (super.getIsLive().equals(true)) {
+			l += "Zebra age is " + age;
+			if (condition == HEALTHY) {
+				l += "condition of animal is healthy";
+			} else if (condition == ILL) {
+				l += " condition of animal is ill ";
+			} else {
+				l += " condition of animal is deathly";
+			}
+		} else {
+			l += "ZEbra is not a live";
+		}
+		return l;
+	}
+
+}

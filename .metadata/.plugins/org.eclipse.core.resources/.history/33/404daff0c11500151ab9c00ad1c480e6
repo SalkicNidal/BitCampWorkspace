@@ -1,0 +1,55 @@
+package ba.bitcamp.exercise.tasks;
+
+import java.util.Arrays;
+
+/**
+ * This class present the personal computer with specified attributes and thez
+ * are super class
+ * 
+ * 
+ * @author nidal.salkic
+ *
+ */
+public abstract class PersonalComputer {
+
+	protected String operatingSystem;
+	private Integer ram;
+	private Integer value;
+	private PersonalComputer[] personalcomputer;
+
+	public String getOperatingSystem() {
+		return operatingSystem;
+	}
+
+	public void setOperatingSystem(String operatingSystem) {
+		this.operatingSystem = operatingSystem;
+	}
+
+	public Integer getRam() {
+		return ram;
+	}
+
+	public void setRam(Integer ram) {
+		this.ram = ram;
+	}
+
+	public Integer getValue() {
+		return value;
+	}
+
+	public void setValue(Integer value) {
+		this.value = value;
+	}
+
+	public void printTypeOfInfo() {
+
+	}
+
+	@Override
+	public String toString() {
+		return "PersonalComputer operating System is" + operatingSystem
+				+ ", ram=" + ram + ", value=" + value + ", personalcomputer="
+				+ Arrays.toString(personalcomputer) + "]";
+
+	}
+}

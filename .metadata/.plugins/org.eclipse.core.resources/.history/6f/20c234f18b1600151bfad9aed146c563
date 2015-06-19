@@ -1,0 +1,16 @@
+package ba.bitcamp.exercise.task1;
+
+public class Main {
+	public static void main(String[] args) {
+		
+	
+	TIger t = new TIger ( true , 120, Animal.FOOD_ANIMAL ,200, TIger.HUNTER);
+	
+	System.out.println(t);
+
+	}
+	
+	
+	
+
+}

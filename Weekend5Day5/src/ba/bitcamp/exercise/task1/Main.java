@@ -1,0 +1,21 @@
+package ba.bitcamp.exercise.task1;
+
+public class Main {
+	public static void main(String[] args) {
+
+		TIger t = new TIger(120, 200, TIger.HUNTER);
+		System.out.println(t);
+		t.setIsLive(false);
+		System.out.println(t);
+
+		TIger t1 = new TIger(30, 0, TIger.SLEEPING);
+		System.out.println(t1);
+
+		Zebra z = new Zebra(true, 250, Zebra.FOOD_PLANT, 25, Zebra.ILL);
+		System.out.println(z);
+
+		t1.eat(z);
+		
+	}
+
+}

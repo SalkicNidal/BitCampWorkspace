@@ -1,0 +1,10 @@
+package ba.bitcamp.superAndThis.lectures;
+
+public class IgrajPogodiBroj {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

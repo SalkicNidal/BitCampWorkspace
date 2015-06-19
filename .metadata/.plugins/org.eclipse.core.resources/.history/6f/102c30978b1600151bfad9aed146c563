@@ -1,0 +1,72 @@
+package ba.bitcamp.exercise.task1;
+
+public class TIger extends Animal {
+
+	public static final int SLEEPING = 0;
+	public static final int HUNTER = 1;
+	public static final int EATING = 2;
+
+	private int speed;
+	private int condition;
+
+	public TIger(Boolean isLive, Integer weigth, int mainFood, int speed,
+			int condition) {
+		super(isLive, weigth, mainFood);
+		this.speed = speed;
+		this.condition = condition;
+
+	}
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+
+	public int getCondition() {
+		return condition;
+	}
+
+	public void setCondition(int condition) {
+		this.condition = condition;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		TIger other = (TIger) obj;
+		if (condition != other.condition)
+			return false;
+		if (speed != other.speed)
+			return false;
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		super.toString();
+		String l = "";
+		if (super.getIsLive().equals(true)) {
+			l+=super.toString();
+			l += "TIger speed is " + speed;
+			if (condition == SLEEPING) {
+				l += " condition is  sleepeng";
+			} else if (condition == HUNTER) {
+				l += " Condition is hunter ";
+			} else {
+				l += " condition is eating";
+			}
+		} else {
+			l += "Tiger is not a live";
+		}
+		return l;
+
+	}
+}

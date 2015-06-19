@@ -1,0 +1,41 @@
+package ba.bitcamp.exercise.task2;
+
+public class LandAnimal extends Animal{
+	
+	private String name;
+	private int numberOfLimb;
+	private String placeOfLife;
+	
+	
+	
+	
+	public LandAnimal(String name,boolean hasFur, boolean isMammal,int numberOfLimb,String placeOfLife) {
+		super(hasFur, isMammal);
+		this.numberOfLimb=numberOfLimb;
+		this.placeOfLife=placeOfLife;
+		this.name = name;
+		// TODO Auto-generated constructor stub
+	}
+	public int getNumberOfLimb() {
+		return numberOfLimb;
+	}
+	public void setNumberOfLimb(int numberOfLimb) {
+		this.numberOfLimb = numberOfLimb;
+	}
+	public String getPlaceOfLife() {
+		return placeOfLife;
+	}
+	public void setPlaceOfLife(String placeOfLife) {
+		this.placeOfLife = placeOfLife;
+	}
+	@Override
+	public String toString() {
+		return "LandAnimal name of animal is"+name+ "numberOfLimb=" + numberOfLimb + ", placeOfLife="
+				+ placeOfLife + "]";
+	}
+	
+	
+	
+	
+
+}
