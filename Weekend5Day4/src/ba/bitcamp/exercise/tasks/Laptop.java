@@ -14,7 +14,16 @@ public class Laptop extends PortableComputer {
 	private Boolean hasNumeric;
 	
 	
-	
+	public Laptop(String operatingSystem, Integer ram, Integer value,
+			Integer weightOfComputer, Integer sizeOfDisplay, Boolean hasWiFi,
+			Integer numberOfcells, Boolean hasBluetooth, Boolean hasNumeric) {
+		super(operatingSystem, ram, value, weightOfComputer, sizeOfDisplay,
+				hasWiFi);
+		this.numberOfcells = numberOfcells;
+		this.hasBluetooth = hasBluetooth;
+		this.hasNumeric = hasNumeric;
+		
+	}
 	public Integer getNumberOfcells() {
 		return numberOfcells;
 	}
@@ -34,9 +43,19 @@ public class Laptop extends PortableComputer {
 		this.hasNumeric = hasNumeric;
 	}
 	
+	@Override
 	public void printTypeOfInfo() {
+		super.printTypeOfInfo();
 		System.out.println("A computer designed for portability"); 
+		
 	}
+	@Override
+	public String toString() {
+		return "Laptop [numberOfcells=" + numberOfcells + ", hasBluetooth="
+				+ hasBluetooth + ", hasNumeric=" + hasNumeric + "]";
+	}
+	
+	
 	
 
 }

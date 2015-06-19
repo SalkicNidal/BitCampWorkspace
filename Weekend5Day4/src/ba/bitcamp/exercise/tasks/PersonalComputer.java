@@ -1,5 +1,6 @@
 package ba.bitcamp.exercise.tasks;
 
+
 /**
  * This class present the personal computer with specified attributes and thez
  * are super class
@@ -9,14 +10,25 @@ package ba.bitcamp.exercise.tasks;
  *
  */
 public abstract class PersonalComputer {
+	
 
-	private String operatingSystem;
+	protected String operatingSystem;
 	private Integer ram;
 	private Integer value;
+	//private PersonalComputer[] Personalcomputer;
+	
+	
+	public PersonalComputer(String operatingSystem, Integer ram, Integer value) {
+		this.operatingSystem = operatingSystem;
+		this.ram = ram;
+		this.value = value;
+	}
 
 	public String getOperatingSystem() {
 		return operatingSystem;
 	}
+
+	
 
 	public void setOperatingSystem(String operatingSystem) {
 		this.operatingSystem = operatingSystem;
@@ -37,10 +49,22 @@ public abstract class PersonalComputer {
 	public void setValue(Integer value) {
 		this.value = value;
 	}
+
 	
 	public void printTypeOfInfo(){
+		System.out.println("Operating system is "+this.operatingSystem + " ram is "+this.ram + " price is "+this.value);
 		
-	
 	}
+	
+	@Override
+	public String toString() {
+		String line = "";
+		return line+= " operating System is" + operatingSystem
+				+ ", ram=" + ram + ", value=" + value;
+		
+			
+		
+			
 
+	}
 }

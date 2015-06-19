@@ -12,6 +12,19 @@ public class DesktopComputer extends StationaryComputer {
 	private Integer freeSpaceForRam;
 	private Boolean isOverclock;
 	private Boolean hasOpticalDrive;
+	
+	
+	public DesktopComputer(String operatingSystem, Integer ram, Integer value,
+			Integer speedOfProcesor, Integer powerSupply,
+			Integer capacityOfHardDisk, Integer freeSpaceForRam,
+			Boolean isOverclock, Boolean hasOpticalDrive) {
+		super(operatingSystem, ram, value, speedOfProcesor, powerSupply,
+				capacityOfHardDisk);
+		this.freeSpaceForRam = freeSpaceForRam;
+		this.isOverclock = isOverclock;
+		this.hasOpticalDrive = hasOpticalDrive;
+	}
+	
 
 	public Integer getFreeSpaceForRam() {
 		return freeSpaceForRam;
@@ -39,6 +52,7 @@ public class DesktopComputer extends StationaryComputer {
 
 	
 	public void printTypeOfInfo() {
+		super.printTypeOfInfo();
 		System.out.println("The computer is designed for widespread use"); 
 	}
 

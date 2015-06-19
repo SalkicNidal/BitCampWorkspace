@@ -7,11 +7,20 @@ package ba.bitcamp.exercise.tasks;
  * @author nidal.salkic
  *
  */
-public abstract class StationaryComputer extends PersonalComputer {
+public class StationaryComputer extends PersonalComputer {
 
 	private Integer speedOfProcesor;
 	private Integer powerSupply;
 	private Integer capacityOfHardDisk;
+
+	public StationaryComputer(String operatingSystem, Integer ram,
+			Integer value, Integer speedOfProcesor, Integer powerSupply,
+			Integer capacityOfHardDisk) {
+		super(operatingSystem, ram, value);
+		this.speedOfProcesor = speedOfProcesor;
+		this.powerSupply = powerSupply;
+		this.capacityOfHardDisk = capacityOfHardDisk;
+	}
 
 	public Integer getSpeedOfProcesor() {
 		return speedOfProcesor;
@@ -37,4 +46,11 @@ public abstract class StationaryComputer extends PersonalComputer {
 		this.capacityOfHardDisk = capacityOfHardDisk;
 	}
 
+	@Override
+	public void printTypeOfInfo() {
+		super.printTypeOfInfo();
+		System.out.println("Stationary computer speed of procesor is "
+				+ speedOfProcesor + " ,power supply is " + powerSupply
+				+ " , capacity of ram is " + capacityOfHardDisk);
+	}
 }

@@ -13,6 +13,15 @@ public abstract class PortableComputer extends PersonalComputer {
 	private Integer sizeOfDisplay;
 	private Boolean hasWiFi;
 
+	public PortableComputer(String operatingSystem, Integer ram, Integer value,
+			Integer weightOfComputer, Integer sizeOfDisplay, Boolean hasWiFi) {
+		super(operatingSystem, ram, value);
+		this.weightOfComputer = weightOfComputer;
+		this.sizeOfDisplay = sizeOfDisplay;
+		this.hasWiFi = hasWiFi;
+
+	}
+
 	public Integer getWeightOfComputer() {
 		return weightOfComputer;
 	}
@@ -35,6 +44,13 @@ public abstract class PortableComputer extends PersonalComputer {
 
 	public void setHasWiFi(Boolean hasWiFi) {
 		this.hasWiFi = hasWiFi;
+	}
+
+	public void printTypeOfInfo() {
+		super.printTypeOfInfo();
+		System.out.println(" Weight of computer is " + this.weightOfComputer
+				+ " size of display is " + this.sizeOfDisplay + " has WiFi:"
+				+ this.hasWiFi);
 	}
 
 }

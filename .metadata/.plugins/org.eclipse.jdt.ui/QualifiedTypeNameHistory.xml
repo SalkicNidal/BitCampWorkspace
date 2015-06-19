@@ -9,9 +9,19 @@
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Display"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.MobileSpeaker"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.inheritance.task1.Building"/>
-<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.StationaryComputer"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.PortableComputer"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.Workstation"/>
-<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.PersonalComputer"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.DesktopComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.PersonalComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task2.Bird"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task2.LandAnimal"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="ba.bitcamp.superAndThis.lectures.PogodiBroj"/>
+<fullyQualifiedTypeName name="java.util.concurrent.BrokenBarrierException"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.tasks.StationaryComputer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Animal"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.LifeForm"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Zebra"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.TIger"/>
 </qualifiedTypeNameHistroy>
