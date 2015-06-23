@@ -1,0 +1,14 @@
+package ba.bitcamp.interfaces.exercise.tasks;
+
+public class StringBuilderCamp {
+
+	char [] arr = new char [3];
+	
+	static class InnerClass{
+		
+		
+	}
+	
+	
+	
+}

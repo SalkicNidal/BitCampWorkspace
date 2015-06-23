@@ -1,0 +1,28 @@
+package ba.bitcamp.exercise.taskforhomework;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		char[] macAddress = { '0', '1', ':', '2', '3', ':', '7', '1', ':', '0',
+				'1', ':', '0', '6', ':', '2', '1' };
+
+		Server s = new Server("Server 1", macAddress, 5);
+
+		Client c = new Client("CLIENT 1", macAddress);
+		Client c1 = new Client("Client2", macAddress);
+
+		System.out.println(c.getMac().toString());
+
+		c.connect(s);
+		c.disconnect();
+		c.connect(s);
+		c1.connect(s);
+
+		System.out.println(s);
+		System.out.println(c);
+		System.out.println(c1);
+
+	}
+
+}

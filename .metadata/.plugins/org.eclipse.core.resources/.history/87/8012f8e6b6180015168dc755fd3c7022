@@ -1,0 +1,48 @@
+public class Main {
+
+	
+	
+	public static Bar getMax(Bar[] b) {
+		Bar max = b[0];
+		for (int i = 0; i < b.length; i++) {
+			if (b[i].comapre(max) == 1) {
+				max = b[i];
+			}
+		}
+		return max;
+	}
+
+	public static Foo getMax(Foo[] f) {
+		Foo max = f[0];
+		for (int i = 0; i < f.length; i++) {
+			if (f[i].comapre(max) == 1) {
+				max = f[i];
+			}
+
+		}
+		return max;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Foo[] arr = new Foo[5];
+		arr[0] = new Foo(3);
+		arr[1] = new Foo(1);
+		arr[2] = new Foo(8);
+		arr[3] = new Foo(3);
+		arr[4] = new Foo(4);
+
+		Foo n = Main.getMax(arr);
+
+		System.out.println(n);
+		
+		
+		Bar [] barArray = new Bar[3];
+		barArray[0] = new Bar("Nidal");
+		barArray[1] = new Bar ("AB");
+		barArray[2] = new Bar ("AAA");
+
+	}
+
+}

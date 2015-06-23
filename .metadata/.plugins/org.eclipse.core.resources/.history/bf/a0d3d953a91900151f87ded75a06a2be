@@ -1,0 +1,14 @@
+package ba.bitcamp.exercise.taskforhomework;
+
+public class Test {
+
+	public static void main(String[] args) {
+		char [] macAddress = { '0', '1' , ':' , '2' , '3',':', '7', '1' , ':' ,'0', '1' , ':' ,'0', '6' , ':' ,'2', '1' };
+		
+		Client c = new Client("CLIENT 1", macAddress);
+		
+		System.out.println(c.getMac());
+	
+	}
+
+}

@@ -1,0 +1,30 @@
+public class Main {
+
+	public static Foo getMax(Foo[] f) {
+		Foo max = f[0];
+		for (int i = 0; i < f.length; i++) {
+			if (f[i].compare(max) == 1) {
+				max = f[i];
+			}
+
+		}
+		return max;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Foo[] arr = new Foo[5];
+		arr[0] = new Foo(3);
+		arr[1] = new Foo(1);
+		arr[2] = new Foo(2);
+		arr[3] = new Foo(3);
+		arr[4] = new Foo(4);
+		
+		Foo n = Main.getMax(arr);
+		
+		System.out.println(n);
+
+	}
+
+}

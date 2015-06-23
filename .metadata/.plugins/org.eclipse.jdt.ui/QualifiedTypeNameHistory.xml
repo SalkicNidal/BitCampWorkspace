@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
 <fullyQualifiedTypeName name="ba.bitcamp.lectures.task2.hourlyEmployee"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Battery"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Antenna"/>
@@ -24,4 +22,34 @@
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.LifeForm"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.Zebra"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.task1.TIger"/>
+<fullyQualifiedTypeName name="Foo"/>
+<fullyQualifiedTypeName name="Compare"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="OuterClass"/>
+<fullyQualifiedTypeName name="OuterClass.InnerClass"/>
+<fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.Shape"/>
+<fullyQualifiedTypeName name="org.w3c.dom.css.Rect"/>
+<fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.Rectangle"/>
+<fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.Drawable"/>
+<fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.WriteableClock"/>
+<fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.Clock"/>
+<fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.StringBuilderCamp"/>
+<fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.StringBuilderCamp.InnerClass"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="ba.bitcamp.lecture.train.Pravouganik"/>
+<fullyQualifiedTypeName name="ba.bitcamp.lecture.train.Krug"/>
+<fullyQualifiedTypeName name="ba.bitcamp.lecture.train.Kvadrat"/>
+<fullyQualifiedTypeName name="ba.bitcamp.lecture.train.ITijelo"/>
+<fullyQualifiedTypeName name="ba.bitcamp.lecture.train.KompleksnoTijelo"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.Computer.MacAddress"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.Server"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.Connectable"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.Client"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.Computer"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.Network"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.Functionable"/>
+<fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+<fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
+<fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.ArrayManipulation"/>
 </qualifiedTypeNameHistroy>

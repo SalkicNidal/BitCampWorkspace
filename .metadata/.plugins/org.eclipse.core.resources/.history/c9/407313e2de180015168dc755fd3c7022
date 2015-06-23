@@ -1,0 +1,23 @@
+package ba.bitcamp.interfaces.exercise.tasks;
+
+import org.w3c.dom.css.Rect;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+		
+		Line l = new Line (5);
+		
+		System.out.println(l.getArea());
+		System.out.println(l.getCircumference());
+		l.drawOnConsole();
+		
+		Rectangle r =new Rectangle(5,5);
+		System.out.println(r.getArea());
+		System.out.println(r.getCircumference());
+		r.drawOnConsole();
+
+	}
+
+}

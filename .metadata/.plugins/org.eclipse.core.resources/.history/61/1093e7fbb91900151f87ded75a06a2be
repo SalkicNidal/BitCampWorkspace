@@ -1,0 +1,38 @@
+package ba.bitcamp.exercise.taskforhomework;
+
+public class BusNetwork extends Network implements Functionable {
+
+	public BusNetwork(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public boolean isFunctionable() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void addComputer(Computer c) {
+
+		ArrayManipulation.extendArray(super.getComp());
+		super.getComp()[super.getComp().length - 1] = c;
+
+		if (c instanceof Client) {
+			Client c1 = (Client) (c);
+			c1.connect(this);
+
+		} else {
+
+		}
+
+	}
+
+	@Override
+	public void removeComputer(Computer c) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

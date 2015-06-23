@@ -1,0 +1,46 @@
+package ba.bitcamp.interfaces.exercise.tasks;
+
+public class StringBuilderCamp {
+
+	char[] arr =new char [0];
+
+	static class InnerClass {
+
+		StringBuilderCamp sbc = new StringBuilderCamp();
+
+		char[] increase(int num) {
+
+			return sbc.arr = new char[sbc.arr.length + num];
+
+		}
+
+		char[] entered(String s, int num) {
+
+			int num1 = s.length();
+			char[] arr1 = new char[sbc.arr.length + num1];
+
+			for (int i = 0; i < num; i++) {
+				arr1[i] = sbc.arr[i];
+			}
+			for (int i = num; i < num1; i++) {
+				arr1[i] = s.charAt(i);
+			}
+			for (int i = num1; i < sbc.arr.length; i++) {
+				arr1[i] = sbc.arr[i];
+			}
+			return arr1;
+		}
+
+		char[] shift() {
+
+			sbc.arr[0] = sbc.arr[sbc.arr.length];
+
+			for (int i = 1; i < sbc.arr.length; i++) {
+				sbc.arr[i] = sbc.arr[i];
+			}
+			return sbc.arr;
+		}
+
+	}
+
+}

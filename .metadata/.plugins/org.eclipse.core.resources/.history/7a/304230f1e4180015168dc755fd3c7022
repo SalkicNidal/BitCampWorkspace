@@ -1,0 +1,5 @@
+package ba.bitcamp.interfaces.exercise.tasks;
+
+public class Clock {
+
+}

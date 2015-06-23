@@ -33,6 +33,8 @@ public class Main {
 			System.out.println();
 
 		}
+	}
+}
 
 //		Clock c = new Clock(18, 54, 52);
 //

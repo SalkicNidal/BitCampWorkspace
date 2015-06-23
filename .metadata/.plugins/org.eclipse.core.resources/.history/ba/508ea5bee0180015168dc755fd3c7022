@@ -1,0 +1,31 @@
+package ba.bitcamp.interfaces.exercise.tasks;
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+		
+		Line l = new Line (5);
+		
+		System.out.println(" Area of line is:" +l.getArea());
+		System.out.println(l.getCircumference());
+		l.drawOnConsole();
+		
+		Rectangle r =new Rectangle(3,5);
+		System.out.println("Area of rectangles is: " +r.getArea());
+		System.out.println(r.getCircumference());
+		r.drawOnConsole();
+
+		Drawable[] d = new Drawable[50];
+		for ( int i = 0, j =0; i < 50; i++, j++){
+			d[i] = new Line ((int)( Math.random()*5+1));
+			d[i].drawOnConsole();
+			d[j] = new Rectangle ((int)( Math.random()*5+1), (int)( Math.random()*5+1));
+			d[j].drawOnConsole();
+		}
+		
+	}
+
+}
