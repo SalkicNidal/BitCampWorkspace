@@ -1,0 +1,55 @@
+package ba.bitcamp.exercise.GUI;
+
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Window5 extends JFrame {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1773672971798719255L;
+
+	private JLabel text = new JLabel("Try to delete text");
+	private JButton button = new JButton(">");
+	private JButton button1 = new JButton("<");
+
+	public Window5() {
+
+		setVisible(true);
+		setTitle("Window1");
+		setSize(400, 300);
+		setLocation(500, 250);
+
+		text.setHorizontalAlignment(NORMAL);
+		setLayout(new BorderLayout());
+
+		add(button, BorderLayout.EAST);
+		add(button1, BorderLayout.WEST);
+		add(text, BorderLayout.CENTER);
+
+		button.addActionListener(new Action());
+
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+	public static void main(String[] args) {
+		new Window5();
+
+	}
+
+	private class Action implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			
+			
+		}
+	}
+}

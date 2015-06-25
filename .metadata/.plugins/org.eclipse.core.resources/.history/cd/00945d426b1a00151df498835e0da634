@@ -1,0 +1,34 @@
+package ba.bitcamp.exercise.GUI;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Window1 extends JFrame{
+	
+	private JLabel text = new JLabel("Hello World");
+	private JButton button = new JButton("Hello !!");
+	
+	
+	public Window1(){
+		
+		setLayout ( new BorderLayout());
+		add(button, BorderLayout.SOUTH);
+		add(text,BorderLayout.CENTER);
+		
+		setVisible(true);
+		setTitle("Prozor");
+		setSize(400, 300);
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		new Window1();
+	}
+
+	
+	
+}

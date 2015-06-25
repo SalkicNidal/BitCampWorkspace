@@ -1,0 +1,9 @@
+package ba.bitcamp.exercise.GUI;
+
+import javax.swing.JFrame;
+
+public class Window5 extends JFrame{
+	
+	
+
+}

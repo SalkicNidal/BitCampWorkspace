@@ -1,0 +1,19 @@
+package ba.bitcamp.exercise.GUI;
+
+import javax.swing.JFrame;
+
+public class Main  extends JFrame{
+
+	public Main(){
+		
+		setVisible(true);
+		setTitle("Prozor");
+		setSize(400, 300);
+	}
+	
+	public static void main(String[] args) {
+		Main Prozor = new Main ();
+		
+		
+	}
+}

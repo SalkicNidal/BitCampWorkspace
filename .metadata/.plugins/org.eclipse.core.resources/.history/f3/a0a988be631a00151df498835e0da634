@@ -1,0 +1,27 @@
+package ba.bitcamp.exercise.GUI;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main  extends JFrame{
+
+	public Main(){
+		
+		JButton dugme = new JButton("OK");
+		JLabel text = new JLabel("Hello Wolrd");
+		text.setText("EJ ");
+		add(text);
+		
+		
+		setVisible(true);
+		setTitle("Prozor");
+		setSize(400, 300);
+	}
+	
+	public static void main(String[] args) {
+		Main Prozor = new Main ();
+		
+		
+	}
+}

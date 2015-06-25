@@ -1,0 +1,14 @@
+package ba.bitcamp.exercise.GUI;
+
+import javax.swing.JFrame;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+		JFrame prozor = new JFrame();
+		prozor.setVisible(true);
+		prozor.setTitle("Prozor");
+		prozor.setDefaultCloseOperation(3);
+	}
+}

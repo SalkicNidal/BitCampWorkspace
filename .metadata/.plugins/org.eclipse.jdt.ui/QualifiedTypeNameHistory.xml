@@ -35,7 +35,6 @@
 <fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.Clock"/>
 <fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.StringBuilderCamp"/>
 <fullyQualifiedTypeName name="ba.bitcamp.interfaces.exercise.tasks.StringBuilderCamp.InnerClass"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="ba.bitcamp.lecture.train.Pravouganik"/>
 <fullyQualifiedTypeName name="ba.bitcamp.lecture.train.Krug"/>
 <fullyQualifiedTypeName name="ba.bitcamp.lecture.train.Kvadrat"/>
@@ -52,4 +51,10 @@
 <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
 <fullyQualifiedTypeName name="java.lang.UnsupportedOperationException"/>
 <fullyQualifiedTypeName name="ba.bitcamp.exercise.taskforhomework.ArrayManipulation"/>
+<fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

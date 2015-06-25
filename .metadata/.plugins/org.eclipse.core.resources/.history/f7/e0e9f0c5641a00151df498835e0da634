@@ -1,0 +1,42 @@
+package ba.bitcamp.exercise.GUI;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class Main extends JFrame {
+
+	public Main() {
+		
+		
+		
+		JButton dugme = new JButton("OK");
+		dugme.addActionListener(new Action());
+		JLabel text = new JLabel("Hello Wolrd");
+		text.setText("EJ ");
+		add(text);
+		add(dugme);
+
+		setVisible(true);
+		setTitle("Prozor");
+		setSize(400, 300);
+	}
+
+	public static void main(String[] args) {
+		Main Prozor = new Main();
+
+	}
+
+	private class Action implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			System.out.println("Okinut acttion listener");
+
+		}
+
+	}
+}

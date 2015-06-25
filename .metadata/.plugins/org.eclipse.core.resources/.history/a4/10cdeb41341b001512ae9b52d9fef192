@@ -1,0 +1,79 @@
+package ba.bitcamp.exercise.recursion.task1;
+
+public class Task1 {
+
+	/**
+	 * Method for print number some of times
+	 * 
+	 * @param name
+	 *            - String for print
+	 * @param num
+	 */
+	static void print(String name, int num) {
+
+		if (num == 0) {
+			return;
+		}
+		System.out.println(name);
+		print(name, num - 1);
+	}
+
+	/**
+	 * Method for print every second number
+	 * 
+	 * @param num
+	 *            = integer number
+	 */
+	public static void printEverySecondNumber(int num) {
+
+		if (num < 1) {
+			return;
+		}
+		System.out.println(num);
+		printEverySecondNumber(num - 2);
+	}
+
+	/**
+	 * Method for get sum
+	 * 
+	 * @param num
+	 *            - integer number
+	 * @return - sum of numbers
+	 */
+	public static int getSum(int num) {
+
+		if (num < 0) {
+			return 0;
+		}
+		return num + getSum(num - 1);
+
+	}
+	
+	public static int getFibonacciNumber( int num){
+		
+		if ( num < 1 ){
+			
+			return 1;
+		}
+		
+		return  getFibonacciNumber( num )  + getFibonacciNumber( num -2);
+		 
+	}
+	
+
+	public static void main(String[] args) {
+
+		// Using print method for print string three times
+		print("NIdal", 3);
+
+		// Using method for print every second number
+		printEverySecondNumber(2);
+
+		// Print sum of number to console
+		System.out.println(getSum(100));
+		
+		System.out.println(getFibonacciNumber(9));
+
+	}
+
+}

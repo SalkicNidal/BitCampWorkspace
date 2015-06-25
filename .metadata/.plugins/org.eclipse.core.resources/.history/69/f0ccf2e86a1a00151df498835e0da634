@@ -1,0 +1,25 @@
+package ba.bitcamp.exercise.GUI;
+
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Window1 extends JFrame{
+	
+	private JButton = new JButton("Hello");
+	
+	
+	public Window1(){
+		
+		add(dugme, BorderLayout.SOUTH);
+		
+	}
+	
+	public static void main(String[] args) {
+		new Window1();
+	}
+
+	
+	
+}
