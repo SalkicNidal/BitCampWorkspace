@@ -29,8 +29,8 @@ public class Task1 extends JFrame {
 
 		panel2.setLayout(new GridLayout(3, 3));
 		for (int i = 0; i < 9; i++) {
-			buttons[i] = new JButton(""+i);
-			buttons[i].setPreferredSize(new Dimension(100,50));
+			buttons[i] = new JButton("" + i);
+			buttons[i].setPreferredSize(new Dimension(100, 50));
 			panel2.add(buttons[i]);
 		}
 
