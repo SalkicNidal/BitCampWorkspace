@@ -1,0 +1,16 @@
+
+[Temperture] 1.4
+[Temperture] 34.0
+Wrong input
+[Error]hdss;eed
+[Temperture] 34.0
+Wrong input
+[Pressure] 450
+Wrong input
+Wrong input
+[COMMON.ERROR]yt
+[COMMON.ERROR]tre
+[Error]Message
+[Error]nidal
+[COMMON.ERROR] 5
+[Temperture] 5.567759843E9
